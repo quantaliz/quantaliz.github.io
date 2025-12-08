@@ -257,6 +257,17 @@ input, select, textarea {
 		font-size: 5em;
 	}
 
+/* Responsive images and videos */
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	video {
+		max-width: 100%;
+		height: auto;
+	}
+
 /* Container */
 
 	.container {
@@ -2499,5 +2510,121 @@ input, select, textarea {
 					#copyright li:first-child {
 						margin-top: 0;
 					}
+
+		/* Mobile typography adjustments */
+
+			h1.albotize {
+				font-size: 3em;
+			}
+
+			h2.albotize {
+				font-size: 1.5em;
+			}
+
+			h1.quantalize {
+				font-size: 2.5em;
+			}
+
+		/* Mobile nav improvements */
+
+			#nav h4 {
+				font-size: 0.9em;
+				margin: 0;
+			}
+
+			#nav a {
+				padding: 0 0.5em;
+				font-size: 0.85em;
+			}
+
+		/* Ensure videos scale properly */
+
+			video {
+				width: 100%;
+				max-width: 300px;
+				height: auto;
+			}
+
+	}
+
+/* Extra Small - for very small mobile devices */
+
+	@media screen and (max-width: 480px) {
+
+		/* Even smaller typography */
+
+			h1 {
+				font-size: 1.75em;
+			}
+
+			h1.albotize {
+				font-size: 2.25em;
+			}
+
+			h2.albotize {
+				font-size: 1.25em;
+			}
+
+			h1.quantalize {
+				font-size: 2em;
+			}
+
+		/* Smaller nav for tiny screens */
+
+			#nav {
+				overflow-x: auto;
+				white-space: nowrap;
+			}
+
+			#nav h4 {
+				font-size: 0.8em;
+			}
+
+			#nav a {
+				padding: 0 0.4em;
+				font-size: 0.75em;
+			}
+
+		/* Reduce wrapper padding */
+
+			.wrapper {
+				padding: 2em 0;
+			}
+
+		/* Smaller buttons */
+
+			input[type="button"],
+			input[type="submit"],
+			input[type="reset"],
+			button,
+			.button {
+				font-size: 1em;
+				padding: 0.75em 0;
+			}
+
+		/* Adjust social icons */
+
+			ul.social li a {
+				width: 50px;
+				height: 50px;
+			}
+
+				ul.social li a:before {
+					font-size: 40px;
+					height: 50px;
+					line-height: 50px;
+					width: 50px;
+				}
+
+		/* Article top section */
+
+			#top {
+				padding: 2em 0;
+			}
+
+				#top .image {
+					width: 12em;
+					height: 12em;
+				}
 
 	}
